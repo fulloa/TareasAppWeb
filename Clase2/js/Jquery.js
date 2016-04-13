@@ -7,7 +7,7 @@ var miJSON={
 
 $(document).ready(function(){
 	$.each(miJSON, function(i,item){
-		var fila='<tr id="'+cont+'" onclick="mostrar_seleccionados(this.id)"><td>'+miJSON[i].user+'</td><td>'+miJSON[i].name+'</td><td>'+miJSON[i].lastName+'</td>'+'</tr>';
+		var fila='<tr id="'+(cont++)+'" onclick="mostrar_seleccionados(this.id)"><td>'+miJSON[i].user+'</td><td>'+miJSON[i].name+'</td><td>'+miJSON[i].lastName+'</td>'+'</tr>';
 		$('#datos_tabla').append(fila);
 	})
 })
